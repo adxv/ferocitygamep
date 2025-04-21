@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d8aa359b5944334189703fbbe6e7523, type: 3}
+  m_Name: Guard_Fists
+  m_EditorClassIdentifier: 
+  weaponName: Guard_Fists
+  playerSprite: {fileID: -1819475895, guid: 5ebbea0524dc38e44a8fcb921bf157fc, type: 3}
+  weaponIcon: {fileID: -2003784211, guid: 5ebbea0524dc38e44a8fcb921bf157fc, type: 3}
+  pickupPrefab: {fileID: 0}
+  canShoot: 0
+  isMelee: 1
+  isSilent: 0
+  projectilePrefab: {fileID: 0}
+  fireRate: 2
+  isFullAuto: 0
+  damage: 1
+  bulletOffset: 1
+  bulletOffsetSide: 0
+  range: 3
+  bulletSpeed: 200
+  spread: 0
+  magazineSize: 1
+  pelletCount: 1
+  spreadAngle: 0
+  shootSound: {fileID: 0}
+  emptyClickSound: {fileID: 8300000, guid: 12b075290ff78f04d900af810cdbed06, type: 3}
+  shootShakeDuration: 0.01
+  shootShakeMagnitude: 0.01
+  muzzleFlashPrefab: {fileID: 0}
+  muzzleFlashDuration: 0.05
+  hitSound: {fileID: 8300000, guid: 90509ebd36edd644dbbf0c157f9a5093, type: 3}
+  missSound: {fileID: 8300000, guid: 119b89877848a0f4ea67c515f64cf6c5, type: 3}
+  attackSprite: {fileID: -2003784211, guid: 5ebbea0524dc38e44a8fcb921bf157fc, type: 3}
+  attackSprite2: {fileID: 1324605338, guid: 5ebbea0524dc38e44a8fcb921bf157fc, type: 3}
+  useAlternatingSprites: 1
+  attackDuration: 0.1
