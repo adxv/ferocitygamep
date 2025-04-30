@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "ferocitygame.sln"
+    "dotnet.defaultSolution": "ferocitygamep.sln"
 }
