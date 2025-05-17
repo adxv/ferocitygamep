@@ -66,10 +66,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\UI\ScoreManager.cs" />
-    <Compile Include="Assets\Scripts\Player\PowerUpManager.cs" />
     <Compile Include="Assets\Scripts\Data\WeaponData.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyController.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyEquipment.cs" />
+    <Compile Include="Assets\Scripts\UI\PowerUpManager.cs" />
     <Compile Include="Assets\Scripts\Player\SoundDetectionField.cs" />
     <Compile Include="Assets\Scripts\Map\EntranceDoubleDoorController.cs" />
     <Compile Include="Assets\Scripts\BackgroundColor.cs" />
@@ -86,16 +86,17 @@
     <Compile Include="Assets\Scripts\LevelExitTrigger.cs" />
     <Compile Include="Assets\Scripts\UI\Restart.cs" />
     <Compile Include="Assets\Scripts\Items\WeaponPrefab.cs" />
+    <Compile Include="Assets\Scripts\Audio\MenuMusic.cs" />
     <Compile Include="Assets\Scripts\Items\WeaponPickup.cs" />
     <Compile Include="Assets\Scripts\Enemy\BossEnemy.cs" />
     <Compile Include="Assets\Scripts\UI\AmmoDisplay.cs" />
+    <Compile Include="Assets\Scripts\Audio\VolumeManager.cs" />
     <Compile Include="Assets\Scripts\UI\ScoreScreenManager.cs" />
     <Compile Include="Assets\Scripts\Map\FloorAccessController.cs" />
     <Compile Include="Assets\Scripts\Map\FloorManager.cs" />
     <Compile Include="Assets\Scripts\Data\EnemyData.cs" />
     <Compile Include="Assets\Scripts\UI\UIManager.cs" />
     <Compile Include="Assets\Scripts\Items\Bullet.cs" />
-    <Compile Include="Assets\Scripts\UI\VolumeManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -111,6 +112,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\Art\Sprites\Player\fix pivot.txt" />
     <None Include="Assets\Prefabs\Door\README.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
