@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ScoreScreen.unity
     guid: cae847d8a720bec4bafdfada87775d54
   - enabled: 1
+    path: Assets/Scenes/LoadingScreen.unity
+    guid: f40538107c5e2044497473e6f378e466
+  - enabled: 1
     path: Assets/Scenes/map_residence.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
