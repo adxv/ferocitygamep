@@ -33,6 +33,7 @@ MonoBehaviour:
   spreadAngle: 0
   shootSound: {fileID: 0}
   emptyClickSound: {fileID: 0}
+  impactSound: {fileID: 0}
   shootShakeDuration: 0.1
   shootShakeMagnitude: 0.1
   muzzleFlashPrefab: {fileID: 0}

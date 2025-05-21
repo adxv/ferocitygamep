@@ -119,8 +119,9 @@ public class PowerUpManager : MonoBehaviour         //could rename to PerkManage
     {
         if (!string.IsNullOrEmpty(sceneToLoad))
         {
-            Debug.Log("scene: " + sceneToLoad);            
+            Debug.Log("scene: " + sceneToLoad);
             // Use the loading screen instead of direct scene loading
+            MenuMusicController.instance.StopMusic();
             LoadingScreenManager.LoadScene(sceneToLoad);
         }
         else

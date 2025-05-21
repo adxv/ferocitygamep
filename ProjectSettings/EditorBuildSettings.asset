@@ -15,10 +15,10 @@ EditorBuildSettings:
     path: Assets/Scenes/PowerUpSelect.unity
     guid: 405a8f198db6e9c48973923dc724961f
   - enabled: 1
-    path: Assets/Scenes/ScoreScreen.unity
+    path: Assets/Scenes/map_ScoreScreen.unity
     guid: cae847d8a720bec4bafdfada87775d54
   - enabled: 1
-    path: Assets/Scenes/LoadingScreen.unity
+    path: Assets/Scenes/map_LoadingScreen.unity
     guid: f40538107c5e2044497473e6f378e466
   - enabled: 1
     path: Assets/Scenes/map_residence.unity

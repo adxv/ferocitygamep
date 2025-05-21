@@ -24,9 +24,12 @@ public class ScoreScreenManager : MonoBehaviour
     public static int FinalScore { get; set; }
     public static string Grade { get; set; } = "D";
     public static float CompletionTime { get; set; }
+
+    [SerializeField] private GameObject menuMusicPrefab;
     
     void Start()
     {
+        //MenuMusicController.StartMenuMusic(menuMusicPrefab);
         DisplayScoreInfo();
         
         if (backButton != null)

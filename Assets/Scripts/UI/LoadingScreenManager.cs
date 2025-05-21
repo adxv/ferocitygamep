@@ -59,7 +59,6 @@ public class LoadingScreenManager : MonoBehaviour
         yield return new WaitUntil(() => minimumTimeReached && Input.anyKeyDown);
 
         // activate the scene
-        MenuMusicController.instance.StopMusic();
         asyncLoad.allowSceneActivation = true;
     }
     
@@ -78,6 +77,6 @@ public class LoadingScreenManager : MonoBehaviour
     public static void LoadScene(string sceneName)
     {
         targetScene = sceneName;
-        SceneManager.LoadScene("LoadingScreen");
+        SceneManager.LoadScene("map_LoadingScreen");
     }
 }

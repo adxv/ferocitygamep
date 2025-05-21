@@ -31,6 +31,7 @@ public class WeaponData : ScriptableObject
     [Header("effects")]
     public AudioClip shootSound;   
     public AudioClip emptyClickSound; // when empty
+    public AudioClip impactSound;
     public float shootShakeDuration = 0.05f;
     public float shootShakeMagnitude = 0.05f;
     public GameObject muzzleFlashPrefab; // particle

@@ -146,7 +146,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 52
+  controlID: 135
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 21
+  controlID: 29
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 53
+  controlID: 74
   draggingID: 0
 --- !u!114 &11
 MonoBehaviour:
@@ -1313,9 +1313,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 1007.26874, y: 651.71204, z: -0.37140763}
+    m_Target: {x: 887.60364, y: 561.3329, z: -3.5392551}
     speed: 2
-    m_Value: {x: 1007.26874, y: 651.71204, z: -0.37140763}
+    m_Value: {x: 887.60364, y: 561.3329, z: -3.5392551}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1365,9 +1365,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 284.52594
+    m_Target: 601.3104
     speed: 2
-    m_Value: 284.52594
+    m_Value: 601.3104
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1506,7 +1506,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: bc4ffcffce4ffcff9e54fcff5658fcff1263fcff6865fcffe06cfcffe86cfcff186dfcff4a6dfcff8c6dfcffbe6dfcffdc80fcffee80fcffc685fcff8689fcff4a94fcffa896fcff289efcff389efcff709efcffaa9efcfff49efcff2e9ffcff72a9fcff84a9fcff26aefcffdeb1fcff9abcfcfff0befcff68c6fcff70c6fcffa0c6fcffd2c6fcff14c7fcff46c7fcff4cd1fcff5ed1fcff48d6fcff1adafcfff0e4fcff60e7fcfff2eefcff14effcff5eeffcffaaeffcff06f0fcff52f0fcffb231feff443efeff963efeffc842feff3844feff7445feffcc56feffde56feffb05bfeff6c5ffeff2c6afeff866cfeff0474feff3874feff7074feffb874fefff274feff109afeff1e9afefffcccfeff2e82ffff4e82ffff6e82ffffc492ffffeea8ffff1ec1ffff3ac1ffff4ec1ffff50e6fffff0e6ffff2af3ffff2cf3ffff0cfbfffff4ffffff20b000002cb000004cb0000058b000007eb0000008d100000a3701007e37010092370100ce370100e4370100f637010018410100
+      m_ExpandedIDs: 26bbfcff38bbfcff0cc0fcffc4c3fcff80cefcffd6d0fcff4ed8fcff56d8fcff86d8fcffb8d8fcfffad8fcff38d9fcff76e6fcff88e6fcff64ebfcff24effcffe8f9fcff46fcfcffc603fdffd603fdff0e04fdff4804fdff9204fdffd804fdff048ffdff18b9fdff78f0fdff44f5fdffe622feff4c2bfefff266feffd06efeff109efeff6eb0feffecbafefff4f4feff0800ffff0cfbfffff4ffffff32ed0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1578,7 +1578,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/UI
+    - Assets/Data/Weapons/Player
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1588,16 +1588,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 61
   m_LastFolders:
-  - Assets/Scripts/UI
+  - Assets/Data/Weapons/Player
   m_LastFoldersGridSize: 61
   m_LastProjectPath: C:\dev\ferocitygamep
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 261}
-    m_SelectedIDs: e0b30000
-    m_LastClickedID: 46048
-    m_ExpandedIDs: 0000000038b300009cb300009eb30000aab30000b0b300007a79010000ca9a3b
+    scrollPos: {x: 0, y: 85}
+    m_SelectedIDs: 706d0100
+    m_LastClickedID: 93552
+    m_ExpandedIDs: 00000000c2b3000028b400002ab4000034b400003ab400006a6d010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1626,7 +1626,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000038b30000
+    m_ExpandedIDs: 00000000c2b30000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1707,7 +1707,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 836
     y: 595
-    width: 580
+    width: 579
     height: 399
   m_SerializedDataModeController:
     m_DataMode: 0

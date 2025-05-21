@@ -89,11 +89,21 @@ public class BossEnemy : MonoBehaviour
         {
             GameObject immuneEffect = Instantiate(Resources.Load<GameObject>("Particles/Immune"),
                 transform.position, Quaternion.identity);
+            // play impact sound
+            if (thrownWeapon.impactSound != null)
+            {
+                AudioSource.PlayClipAtPoint(thrownWeapon.impactSound, baseEnemy.transform.position);
+            }
         }
         else
         {
             // if melee, take 1 damage
             baseEnemy.TakeDamage(1);
+            // play impact sound
+            if (thrownWeapon.impactSound != null)
+            {
+                AudioSource.PlayClipAtPoint(thrownWeapon.impactSound, baseEnemy.transform.position);
+            }
         }
     }
 

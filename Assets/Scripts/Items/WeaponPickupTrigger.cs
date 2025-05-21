@@ -31,7 +31,7 @@ public class WeaponPickupTrigger : MonoBehaviour
                 if (enemy != null && !enemy.isDead)
                 {
                     BossEnemy bossEnemy = enemy.GetComponent<BossEnemy>(); // check if boss
-                    
+
                     // get the thrown weapon data
                     WeaponPickup parentPickup = transform.parent.GetComponent<WeaponPickup>();
                     WeaponData thrownWeaponData = null;
@@ -39,38 +39,49 @@ public class WeaponPickupTrigger : MonoBehaviour
                     {
                         thrownWeaponData = parentPickup.weaponData;
                     }
-                    
+
                     // boss enemies
                     if (bossEnemy != null)
                     {
                         bossEnemy.HandleThrownWeapon(thrownWeaponData);
                         return;
                     }
-                    
+
                     // default enemy
                     if (thrownWeaponData != null && thrownWeaponData.isMelee)
                     {
                         enemy.TakeDamage(1);
+                        // play impact sound
+                        if (thrownWeaponData.impactSound != null)
+                        {
+                            AudioSource.PlayClipAtPoint(thrownWeaponData.impactSound, enemy.transform.position);
+                        }
                         return;
                     }
-                    
+
                     // for non-melee weapons on regular enemies
                     EnemyEquipment enemyEquipment = enemy.GetComponent<EnemyEquipment>();
-                    if (enemyEquipment != null && 
-                        enemyEquipment.CurrentWeapon != null && 
+                    if (enemyEquipment != null &&
+                        enemyEquipment.CurrentWeapon != null &&
                         enemyEquipment.CurrentWeapon != enemyEquipment.FistWeaponData &&
                         enemyEquipment.CurrentWeapon.pickupPrefab != null)
                     {
                         // get weapon data before disarming
                         WeaponData enemyWeapon = enemyEquipment.CurrentWeapon;
-                        
+
+                        // play impact sound
+                        if (thrownWeaponData.impactSound != null)
+                        {
+                            AudioSource.PlayClipAtPoint(thrownWeaponData.impactSound, enemy.transform.position);
+                        }
+
                         // instantiate weapon pickup
                         GameObject droppedWeapon = Instantiate(
-                            enemyWeapon.pickupPrefab, 
-                            enemy.transform.position, 
+                            enemyWeapon.pickupPrefab,
+                            enemy.transform.position,
                             Quaternion.Euler(0f, 0f, Random.Range(0f, 360f))
                         );
-                        
+
                         // apply forces
                         Rigidbody2D weaponRb = droppedWeapon.GetComponent<Rigidbody2D>();
                         if (weaponRb != null)
@@ -81,9 +92,17 @@ public class WeaponPickupTrigger : MonoBehaviour
                             weaponRb.AddForce(randomDirection * forceMagnitude, ForceMode2D.Impulse);
                             weaponRb.AddTorque(Random.Range(-2f, 2f), ForceMode2D.Impulse);
                         }
-                        
+
                         // switch the enemy to fists
                         enemyEquipment.EquipWeapon(enemyEquipment.FistWeaponData);
+                    }
+                    else
+                    {
+                        // play impact sound
+                        if (thrownWeaponData.impactSound != null)
+                        {
+                            AudioSource.PlayClipAtPoint(thrownWeaponData.impactSound, enemy.transform.position);
+                        }
                     }
                 }
             }

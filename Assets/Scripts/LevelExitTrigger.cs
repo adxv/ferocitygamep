@@ -7,7 +7,7 @@ public class LevelExitTrigger : MonoBehaviour
 {
     public GameObject unlockedIndicator;
     
-    public string scoreScreenName = "ScoreScreen";
+    public string scoreScreenName = "map_ScoreScreen";
     public float activationDelay = 1.0f;
     
     public float indicatorBobSpeed = 2f;
@@ -177,6 +177,6 @@ public class LevelExitTrigger : MonoBehaviour
             Debug.LogWarning("LevelExitTrigger: ScoreManager.Instance is null!");
         }
         
-        SceneManager.LoadScene(scoreScreenName);
+        SceneManager.LoadScene("map_ScoreScreen");
     }
 } 

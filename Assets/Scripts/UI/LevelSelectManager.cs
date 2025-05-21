@@ -21,6 +21,8 @@ public class LevelSelectManager : MonoBehaviour
 
     public static bool shouldFadeInOnLoad = false;
     
+    [SerializeField] private GameObject menuMusicPrefab;
+    
     [System.Serializable]
     public class LevelData
     {
@@ -32,6 +34,7 @@ public class LevelSelectManager : MonoBehaviour
     
     void Start()
     {
+        MenuMusicController.StartMenuMusic(menuMusicPrefab);
         CreateLevelButtons();
         
         // back button
